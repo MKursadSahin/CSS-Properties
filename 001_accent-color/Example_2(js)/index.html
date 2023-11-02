@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accent-color w/JS</title>
+</head>
+<body>
+    <h1>Change "accent-color" with JavaScript</h1>
+
+    <label for="file">Downloading progress</label>
+    <progress id="file" value="72" max="100">72%</progress>
+
+    <p>Click "Try it" button to set the accent-color property to "red":
+    </p>
+    <p>("accent-color" özelliğini kırmızıya çevirmek için "Try it" butonuna basın)</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <!-- JavaScript -->
+    <script>
+        function myFunction() {
+            document.getElementById("file").style.accentColor="red";
+        }
+    </script>
+</body>
+</html>

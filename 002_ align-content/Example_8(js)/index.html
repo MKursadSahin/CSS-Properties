@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-content w/JS</title>
+    <!-- CSS -->
+    <style>
+      #main {
+        width: 140px;
+        height: 300px;
+        border: 1px solid green;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+      }
+
+      #main div {
+        width: 70px;
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Change "align-content" with JavaScript</h1>
+
+    <div id="main">
+      <div style="background-color: aqua"></div>
+      <div style="background-color: blue"></div>
+      <div style="background-color: chartreuse"></div>
+      <div style="background-color: darkorange"></div>
+      <div style="background-color: firebrick"></div>
+      <div style="background-color: gray"></div>
+    </div>
+
+    <p>
+      Click the "Try it" button to set the value of the alignContent property to
+      "space-between"
+    </p>
+    <p>
+      "alignContent" özelliğinin hizalama değerini "space-between" olarak
+      ayarlamak için "Try it" butonuna basın
+    </p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p>
+      <b>Note:</b> Internet Explorer 10 and earlier versions do not support the
+      alignContent property
+    </p>
+
+    <!-- JavaScript -->
+    <script>
+      function myFunction() {
+        document.getElementById("main").style.alignContent = "space-between";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS / align-content (grid)</title>
+    <!-- CSS -->
+    <style>
+      #container {
+        width: 220px;
+        height: 300px;
+        border: 1px solid palevioletred;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* kaç 1fr verirsek o kadar kolona bölüyor */
+        align-content: end;
+      }
+      #container div {
+        width: 70px;
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The align-content Property</h1>
+
+    <p>
+      Items are aligned inside the grid container, at the end in the block
+      direction
+    </p>
+
+    <div id="container">
+      <div style="background-color: aqua"></div>
+      <div style="background-color: blue"></div>
+      <div style="background-color: chartreuse"></div>
+      <div style="background-color: darkorange"></div>
+      <div style="background-color: firebrick"></div>
+    </div>
+  </body>
+</html>
