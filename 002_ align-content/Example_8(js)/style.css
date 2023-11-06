@@ -1,0 +1,13 @@
+#main {
+    width: 140px;
+    height: 300px;
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  #main div {
+    width: 70px;
+    height: 70px;
+  }
